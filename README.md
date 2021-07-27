@@ -1,4 +1,4 @@
-# Group 5 Project - Insert name here
+# Group 5 Project - Staying Current with COVID-19
 
 ## User Story
 * AS A PROFESSIONAL ADULT I am looking for information regarding COVID-19
