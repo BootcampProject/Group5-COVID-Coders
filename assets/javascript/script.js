@@ -25,13 +25,22 @@ $(document).ready(function(){
       };
       $.ajax(stats).done(function (response) {
           console.log(response);
-          $("#stats").append(`<div>New Deaths:${response.stats.newDeaths}</div>`);
-          $("#stats").append(`<div>New Confirmed Cases:${response.stats.newlyConfirmedCases}</div>`);
-          $("#stats").append(`<div>New Recovered Cases:${response.stats.newlyRecoveredCases}</div>`);
-          $("#stats").append(`<div>Total Confirmed Cases:${response.stats.totalConfirmedCases}</div>`);
-          $("#stats").append(`<div>Total Deaths:${response.stats.totalDeaths}</div>`);
-          $("#stats").append(`<div>Total Recovered Cases:${response.stats.totalRecoveredCases}</div>`);
+          $("#newDeath").append(`<div>New Deaths: ${response.stats.newDeaths}</div>`);
+          $("#newConfirmed").append(`<div>New Confirmed Cases: ${response.stats.newlyConfirmedCases}</div>`);
+          $("#newRecovered").append(`<div>New Recovered Cases: ${response.stats.newlyRecoveredCases}</div>`);
+          $("#totalConfirmed").append(`<div>Total Confirmed Cases: ${response.stats.totalConfirmedCases}</div>`);
+          $("#totalDeaths").append(`<div>Total Deaths: ${response.stats.totalDeaths}</div>`);
+          $("#totalRecovered").append(`<div>Total Recovered Cases: ${response.stats.totalRecoveredCases}</div>`);
       });
+    //   $.ajax(stats).done(function (response) {
+    //     console.log(response);
+    //     $("#stats").append(`<div>New Deaths:${response.stats.newDeaths}</div>`);
+    //     $("#stats").append(`<div>New Confirmed Cases:${response.stats.newlyConfirmedCases}</div>`);
+    //     $("#stats").append(`<div>New Recovered Cases:${response.stats.newlyRecoveredCases}</div>`);
+    //     $("#stats").append(`<div>Total Confirmed Cases:${response.stats.totalConfirmedCases}</div>`);
+    //     $("#stats").append(`<div>Total Deaths:${response.stats.totalDeaths}</div>`);
+    //     $("#stats").append(`<div>Total Recovered Cases:${response.stats.totalRecoveredCases}</div>`);
+    // });
        const news = {
           "async": true,
           "crossDomain": true,

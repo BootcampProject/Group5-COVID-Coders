@@ -4,6 +4,14 @@
         background-size: cover;
     }
 
+.mouseClick {
+    margin-top: 70px;
+}
+
+#upArrow {
+    margin-right: 40px;
+}
+
 /* SEARCH BUTTON STYLING */
     .COVIDbuttonStyle {
         border: none;
@@ -14,9 +22,9 @@
     margin: 10px;
 }
 
-.columnBorder {
+/* .columnBorder {
     border-right: 1px solid black;
-}
+} */
 
 #contactUs {
     margin: 40px 10px 30px 10px;
