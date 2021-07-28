@@ -10,6 +10,7 @@ $(document).ready(function(){
               $("#article").append(`<div>
               <h4>${response.records[i].title}</h4>
               <a href="${response.records[i].url[0].value}">Link</a>
+              <div>${response.records[i].abstract}</div>
               </div>`)
           }
       });
@@ -55,3 +56,20 @@ $(document).ready(function(){
 });
 });
 // });
+
+$("#newsletter").on("click", function(event){
+    event.preventDefault();
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var news = []
+    
+    console.log(name);
+    console.log(email);
+
+    news.push(name, email);
+    $("#newsletter").empty();
+
+    localStorage.setItem("newsletter", JSON.stringify(news));
+
+    window.location.href = "newsletter.html";
+})
