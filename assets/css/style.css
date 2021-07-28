@@ -1,12 +1,14 @@
-.uk-button {
-    border: none;
-}
-
 /* Fail safe if video doesn't load */
-#videobg {
-    background: url(video.jpg) no-repeat;
-    background-size: cover;
-}
+    #videobg {
+        background: url(video.jpg) no-repeat;
+        background-size: cover;
+    }
+
+/* SEARCH BUTTON STYLING */
+    .uk-button {
+        border: none;
+    }
+
 
 #mainContent {
     margin: 10px;
