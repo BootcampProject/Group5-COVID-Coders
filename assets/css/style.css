@@ -5,7 +5,7 @@
     }
 
 /* SEARCH BUTTON STYLING */
-    .uk-button {
+    .COVIDbuttonStyle {
         border: none;
     }
 
@@ -14,6 +14,10 @@
     margin: 10px;
 }
 
-.uk-width-1-2 {
+.columnBorder {
     border-right: 1px solid black;
+}
+
+#contactUs {
+    margin: 40px 10px 30px 10px;
 }

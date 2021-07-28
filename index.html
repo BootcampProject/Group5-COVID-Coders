@@ -33,7 +33,7 @@
         <div class="uk-position-bottom">
             <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
                 <div class="uk-navbar-center">
-                    <button class="uk-button uk-button-default uk-width-1-1" id="journal">Click here to search for current COVID-19 articles</button>
+                    <button class="uk-button uk-button-default uk-width-1-1 COVIDbuttonStyle" id="journal">Click here to search for current COVID-19 articles</button>
                 </div>
             </nav>
         </div>
@@ -57,8 +57,8 @@
     <div data-uk-grid="{gutter: 20}" class="uk-grid" id="mainContent">
         <div class="uk-width-3-4">
             <div class="uk-grid">
-                <div class="uk-width-1-2">
-                    <h4>Journal Publication Heading 1</h4>
+                <div class="uk-width-1-2 columnBorder">
+                    <h3>Journal Publication Heading 1</h3>
                     <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
                         <div>
                             <div class="uk-card uk-card-default uk-card-hover uk-card-body">
@@ -68,8 +68,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-2">
-                    <h4>Journal Publication Heading 2</h4>
+                <div class="uk-width-1-2 columnBorder">
+                    <h3>Journal Publication Heading 2</h3>
                     <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
                         <div>
                             <div class="uk-card uk-card-default uk-card-hover uk-card-body">
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="uk-width-1-4">
-            <h4>COVID Statistics</h4> 
+            <h3>COVID Statistics</h3> 
         </div>
     </div>
 
@@ -92,26 +92,30 @@
         <div class="uk-width-3-4">
             <div class="uk-grid">
                 <div class="uk-width-1-2">
-                    <h4>Contact Us</h4>
-                    <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                                <h5 class="uk-card-title">Default</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
+                    <h3>Contact Us</h3>
+                    <form>
+                        <div class="uk-margin uk-width-1-2@s">
+                            <input class="uk-input" type="text" placeholder="Full Name">
                         </div>
-                    </div>
+                    
+                        <div class="uk-margin uk-width-1-2@s">
+                            <input class="uk-input" type="text" placeholder="Type Message">
+                        </div>
+                        <button class="uk-button uk-button-default">Submit</button>
+                    </form>
                 </div>
                 <div class="uk-width-1-2">
-                    <h4>Journal Publication Heading 2</h4>
-                    <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                                <h5 class="uk-card-title">Default</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
+                    <h3>Newsletter Registration</h3>
+                    <form>
+                        <div class="uk-margin uk-width-1-2@s">
+                            <input class="uk-input" type="text" placeholder="Full Name">
                         </div>
-                    </div>
+
+                        <div class="uk-margin uk-width-1-2@s">
+                            <input class="uk-input" type="email" placeholder="E-mail">
+                        </div>
+                        <button class="uk-button uk-button-default">Submit</button>
+                    </form>
                 </div>
             </div>
 
