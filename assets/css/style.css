@@ -1,31 +1,46 @@
-/* Fail safe if video doesn't load */
+/* FAIL SAFE IF VIDEO DOESN'T LOAD*/
     #videobg {
         background: url(video.jpg) no-repeat;
         background-size: cover;
     }
 
-.mouseClick {
-    margin-top: 70px;
-}
+/* MOUSE CLICK ICON */
+    .mouseClick {
+        margin-top: 70px;
+    }
 
-#upArrow {
-    margin-right: 40px;
-}
+    .no-underline:link {
+        text-decoration: none;
+    }
+    
+    .no-underline:visited {
+        text-decoration: none;
+    }
+    
+    .no-underline:hover {
+        text-decoration: none;
+    }
+    
+    .no-underline:active {
+        text-decoration: none;
+    }
+
+/* UP ARROW STYLING */
+    #upArrow {
+        margin-right: 40px;
+    }
 
 /* SEARCH BUTTON STYLING */
     .COVIDbuttonStyle {
         border: none;
     }
 
+/* COLUMN CONTAINING 3 MAIN CONTENT ITEMS */
+    #mainContent {
+        margin: 10px;
+    }
 
-#mainContent {
-    margin: 10px;
-}
-
-/* .columnBorder {
-    border-right: 1px solid black;
-} */
-
-#contactUs {
-    margin: 40px 10px 30px 10px;
-}
+/* CONTACT US & NEWSLETTER ELEMENTS*/
+    #contactUs {
+        margin: 40px 10px 30px 10px;
+    }

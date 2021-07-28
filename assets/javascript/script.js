@@ -8,8 +8,9 @@ $(document).ready(function(){
           console.log(response.records);
           for (let i = 0; i < response.records.length; i++) {
               $("#article").append(`<div>
-              <h4>${response.records[i].title}</h4>
-              <a href="${response.records[i].url[0].value}">Link</a>
+              <a href="${response.records[i].url[0].value}"><h4>${response.records[i].title}</h4></a>
+              <div>${response.records[i].abstract}</div>
+              <hr class="uk-description-list-divider">
               </div>`)
           }
       });
@@ -26,10 +27,15 @@ $(document).ready(function(){
       $.ajax(stats).done(function (response) {
           console.log(response);
           $("#newDeath").append(`<div>New Deaths: ${response.stats.newDeaths}</div>`);
+          $("#newDeath").append(`<hr class="uk-description-list-divider">`);
           $("#newConfirmed").append(`<div>New Confirmed Cases: ${response.stats.newlyConfirmedCases}</div>`);
+          $("#newConfirmed").append(`<hr class="uk-description-list-divider">`);
           $("#newRecovered").append(`<div>New Recovered Cases: ${response.stats.newlyRecoveredCases}</div>`);
+          $("#newRecovered").append(`<hr class="uk-description-list-divider">`);
           $("#totalConfirmed").append(`<div>Total Confirmed Cases: ${response.stats.totalConfirmedCases}</div>`);
+          $("#totalConfirmed").append(`<hr class="uk-description-list-divider">`);
           $("#totalDeaths").append(`<div>Total Deaths: ${response.stats.totalDeaths}</div>`);
+          $("#totalDeaths").append(`<hr class="uk-description-list-divider">`);
           $("#totalRecovered").append(`<div>Total Recovered Cases: ${response.stats.totalRecoveredCases}</div>`);
       });
     //   $.ajax(stats).done(function (response) {
@@ -53,11 +59,11 @@ $(document).ready(function(){
       };
       $.ajax(news).done(function (response) {
           console.log(response);
-          for (let i = 0; i <= 15; i++) {
+          for (let i = 0; i <= 30; i++) {
               $("#news").append(`<div>
-              <h4>${response.news[i].title}</h4>
-              <a href="${response.news[i].webUrl}">Link</a>
+              <a href="${response.news[i].webUrl}"><h4>${response.news[i].title}</h4></a>
               <div>${response.news[i].excerpt}</div>
+              <hr class="uk-description-list-divider">
               </div>`)
           }
       });
