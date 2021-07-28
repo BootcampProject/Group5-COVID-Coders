@@ -2,6 +2,16 @@
     border: none;
 }
 
+/* Fail safe if video doesn't load */
+#videobg {
+    background: url(video.jpg) no-repeat;
+    background-size: cover;
+}
+
 #mainContent {
     margin: 10px;
+}
+
+.uk-width-1-2 {
+    border-right: 1px solid black;
 }

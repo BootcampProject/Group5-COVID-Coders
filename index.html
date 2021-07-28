@@ -11,7 +11,10 @@
 <body>
     <!-- HERO IMAGE & NAV -->
     <div class="uk-position-relative">
-        <img src="./assets/images/HeaderImage.jpg" alt="">
+        <video autoplay muted loop poster="video.jpg" id="videobg">
+            <source src="./assets/images/HeaderVideo.mp4" type="video/mp4">
+        </video>
+        <!-- <img src="./assets/images/HeaderImage.jpg" alt=""> -->
         <div class="uk-position-top">
             <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
                 <div class="uk-navbar-left">
@@ -37,18 +40,34 @@
 
 
     <!-- Content Grid -->
-    <div data-uk-grid="{gutter: 20}" class="uk-grid uk-grid-small" id="mainContent">
-        <div class="uk-width-2-3">
+    <div data-uk-grid="{gutter: 20}" class="uk-grid" id="mainContent">
+        <div class="uk-width-3-4">
             <div class="uk-grid">
-                <div class="uk-width-1-2 uk-grid-divider">
+                <div class="uk-width-1-2">
                     <h4>Journal Publication Heading 1</h4>
+                    <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                <h5 class="uk-card-title">Default</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="uk-width-1-2 uk-grid-divider">
-                    <h4>Journal Publication Heading 1</h4>
+                <div class="uk-width-1-2">
+                    <h4>Journal Publication Heading 2</h4>
+                    <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                <h5 class="uk-card-title">Default</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="uk-width-1-3 uk-grid-divider">
+        <div class="uk-width-1-4">
             <h4>COVID Statistics</h4> 
         </div>
     </div>
