@@ -19,7 +19,7 @@ $(document).ready(function(){
             }
         });
 
-        const settings = {
+        const stats = {
             "async": true,
             "crossDomain": true,
             "url": "https://coronavirus-smartable.p.rapidapi.com/stats/v1/CA/",
@@ -30,11 +30,18 @@ $(document).ready(function(){
             }
         };
         
-        $.ajax(settings).done(function (response) {
+        $.ajax(stats).done(function (response) {
             console.log(response);
+
+            $("#stats").append(`<div>New Deaths:${response.stats.newDeaths}</div>`);
+            $("#stats").append(`<div>New Confirmed Cases:${response.stats.newlyConfirmedCases}</div>`);
+            $("#stats").append(`<div>New Recovered Cases:${response.stats.newlyRecoveredCases}</div>`);
+            $("#stats").append(`<div>Total Confirmed Cases:${response.stats.totalConfirmedCases}</div>`);
+            $("#stats").append(`<div>Total Deaths:${response.stats.totalDeaths}</div>`);
+            $("#stats").append(`<div>Total Recovered Cases:${response.stats.totalRecoveredCases}</div>`);
         });
 
-        const settings2 = {
+        const news = {
             "async": true,
             "crossDomain": true,
             "url": "https://coronavirus-smartable.p.rapidapi.com/news/v1/CA/",
@@ -45,7 +52,7 @@ $(document).ready(function(){
             }
         };
         
-        $.ajax(settings2).done(function (response) {
+        $.ajax(news).done(function (response) {
             console.log(response);
         });
 
