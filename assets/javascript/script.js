@@ -2,8 +2,7 @@ $(document).ready(function(){
 
     $("#journal").on("click", function (event) {
         var loadContent = event.target.textContent
-        var date = "2021-07-26"
-        var urlCovid = "https://api.springernature.com/metadata/json?q=(keyword:covid%20AND%20date:" + date +")&api_key=6dc88c6bf4873b8f5d8482c671f650cc"
+        var urlCovid = "https://api.springernature.com/metadata/json?q=keyword:covid&api_key=6dc88c6bf4873b8f5d8482c671f650cc"
         console.log(urlCovid)
         console.log(loadContent)
 
@@ -41,7 +40,7 @@ $(document).ready(function(){
             $("#stats").append(`<div>Total Recovered Cases:${response.stats.totalRecoveredCases}</div>`);
         });
 
-        const news = {
+         const news = {
             "async": true,
             "crossDomain": true,
             "url": "https://coronavirus-smartable.p.rapidapi.com/news/v1/CA/",
@@ -54,7 +53,20 @@ $(document).ready(function(){
         
         $.ajax(news).done(function (response) {
             console.log(response);
+
+            for (let i = 0; i <= 30; i++) {
+                
+                $("#news").append(`<div>
+                <h4>${response.news[i].title}</h4>
+                <a href="${response.news[i].webUrl}">Link</a>
+                <div>${response.news[i].excerpt}</div>
+                </div>`)
+                
+            }
+
+
         });
 
 });
 });
+// });
