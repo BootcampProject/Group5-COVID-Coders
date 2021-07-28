@@ -1,3 +1,7 @@
 .uk-button {
     border: none;
 }
+
+#mainContent {
+    margin: 10px;
+}
