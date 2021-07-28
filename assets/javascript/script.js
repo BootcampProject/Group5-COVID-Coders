@@ -54,7 +54,7 @@ $(document).ready(function(){
         $.ajax(news).done(function (response) {
             console.log(response);
 
-            for (let i = 0; i <= 30; i++) {
+            for (let i = 0; i <= 15; i++) {
                 
                 $("#news").append(`<div>
                 <h4>${response.news[i].title}</h4>
