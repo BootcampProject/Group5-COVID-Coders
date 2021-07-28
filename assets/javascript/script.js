@@ -2,31 +2,52 @@ $(document).ready(function(){
 
     $("#journal").on("click", function (event) {
         var loadContent = event.target.textContent
-        var urlCovid = "http://api.springernature.com/metadata/pam?q=keyword:covid&api_key=6dc88c6bf4873b8f5d8482c671f650cc"
+        var date = "2021-07-26"
+        var urlCovid = "https://api.springernature.com/metadata/json?q=(keyword:covid%20AND%20date:" + date +")&api_key=6dc88c6bf4873b8f5d8482c671f650cc"
         console.log(urlCovid)
         console.log(loadContent)
 
-        // $("#journal2").on("click", function (event) {
-        //     var loadContent = event.target.textContent
-        //     var urlCovid = "https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/RESTful/tmTool.cgi/Chemical/19894120/JSON/"
-        //     console.log(urlCovid)
-        //     console.log(loadContent)
-
-            const settings = {
-                "async": true,
-                "crossDomain": true,
-                "url": "https://coronavirus-smartable.p.rapidapi.com/stats/v1/US/",
-                "method": "GET",
-                "headers": {
-                    "x-rapidapi-key": "95f51c5453mshb345dad497f1eaep1f9a07jsnf240c760a4c2",
-                    "x-rapidapi-host": "coronavirus-smartable.p.rapidapi.com"
-                }
-            };
+        $.ajax(urlCovid).done(function (response) {
+            console.log(response.records);
             
-            $.ajax(settings).done(function (response) {
-                console.log(response);
-            });
+            for (let i = 0; i < response.records.length; i++) {
+                
+                $("#article").append(`<div>
+                <h4>${response.records[i].title}</h4>
+                <a href="${response.records[i].url[0].value}">Link</a>
+                </div>`)
+            }
+        });
+
+        const settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://coronavirus-smartable.p.rapidapi.com/stats/v1/CA/",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "95f51c5453mshb345dad497f1eaep1f9a07jsnf240c760a4c2",
+                "x-rapidapi-host": "coronavirus-smartable.p.rapidapi.com"
+            }
+        };
+        
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+
+        const settings2 = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://coronavirus-smartable.p.rapidapi.com/news/v1/CA/",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "95f51c5453mshb345dad497f1eaep1f9a07jsnf240c760a4c2",
+                "x-rapidapi-host": "coronavirus-smartable.p.rapidapi.com"
+            }
+        };
+        
+        $.ajax(settings2).done(function (response) {
+            console.log(response);
+        });
 
 });
 });
-// });
