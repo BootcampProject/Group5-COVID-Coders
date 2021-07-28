@@ -53,6 +53,26 @@ $(document).ready(function(){
               </div>`)
           }
       });
+
+      const cadStats = {
+          "url": "https://api.opencovid.ca/summary"
+      };
+
+      $.ajax(cadStats).done(function (response){
+          console.log(response)
+          for (let i = 0; i < 14 ; i++) {
+              $("#cadStats").append(`<div>
+              <div>${response.summary[i].province}</div>
+              <div>${response.summary[i].active_cases}</div>
+              <div>${response.summary[i].cumulative_cases}</div>
+              <div>${response.summary[i].cumulative_avaccine}</div>
+              <div>${response.summary[i].cumulative_recovered}</div>
+              <div>${response.summary[i].testing}</div>
+              <div>${response.summary[i].deaths}</div>
+              </div>`)
+              
+          }
+      })
 });
 });
 // });
@@ -73,3 +93,4 @@ $("#newsletter").on("click", function(event){
 
     window.location.href = "newsletter.html";
 })
+
