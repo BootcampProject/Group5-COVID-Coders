@@ -1,3 +1,23 @@
-.background {
-    
+/* Fail safe if video doesn't load */
+    #videobg {
+        background: url(video.jpg) no-repeat;
+        background-size: cover;
+    }
+
+/* SEARCH BUTTON STYLING */
+    .COVIDbuttonStyle {
+        border: none;
+    }
+
+
+#mainContent {
+    margin: 10px;
+}
+
+.columnBorder {
+    border-right: 1px solid black;
+}
+
+#contactUs {
+    margin: 40px 10px 30px 10px;
 }
