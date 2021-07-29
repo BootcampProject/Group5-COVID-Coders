@@ -56,7 +56,7 @@
                     <div class="uk-position-center">
                         <div class="uk-transition-slide-top-small uk-overlay uk-overlay-default"><h4 class="uk-h4 uk-margin-remove">Stay Current. Stay Informed.</h4></div>
                         <div class="uk-transition-slide-bottom-small uk-overlay uk-overlay-default">
-                            <button class="uk-button uk-button-default uk-width-1-1" id="journal"><a href="#mainContent" class="no-underline uk-dark">Click here for current COVID-19 articles, news and statistics</a></button>
+                            <button class="uk-button uk-button-default uk-width-1-1" id="journal"><a href="#provincePanel" class="no-underline uk-dark">Click here for current COVID-19 articles, news and statistics</a></button>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
 
 
     <!-- Content Grid -->
-    <div class="provinceBtnPanel">
+    <div class="provinceBtnPanel" id="provincePanel">
         <nav class="uk-navbar-container uk-dark" uk-navbar>
             <h3 class="btnPanelHeader">Click on a province to view their most recent COVID-19 statistics.</h3>
             <div class="uk-navbar-left">
@@ -148,24 +148,22 @@
             <h3>Canadian Statistics</h3>
             <!-- Appended List elements layout -->
             <dl class="uk-description-list uk-description-list">
-                <dt id="newDeath"></dt>
+                <!-- <dt id="newDeath"></dt>
                 <dt id="newConfirmed"></dt>
                 <dt id="newRecovered"></dt>
                 <dt id="totalConfirmed"></dt>
                 <dt id="totalDeaths"></dt>
-                <dt id="totalRecovered"></dt>
+                <dt id="totalRecovered"></dt> -->
                 <div id="cadStats"></div>
             </dl>
         </div>
     </div>
 
-    
-    <div class="uk-text-right">
-        <a href="#mainContent" uk-totop uk-scroll>
+    <div class="uk-text-right upArrowIcon">
+        <a href="#provincePanel" uk-totop uk-scroll>
             <img width="40" id="upArrow" src="assets/images/uparrow.png">
         </a>
     </div>
-    
 
     <hr class="uk-divider-icon">
 

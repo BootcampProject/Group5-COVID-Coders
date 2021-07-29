@@ -68,15 +68,15 @@ $(document).ready(function(){
         console.log(response)
         for (let i = 0; i < 14 ; i++) {
             $("#cadStats").append(`<div>
-              <div>Province: ${response.summary[i].province}</div>
-              <div>Active Cases: ${response.summary[i].active_cases}</div>
-              <div>Cumulative Cases: ${response.summary[i].cumulative_cases}</div>
-              <div>Cumulative Vaccine: ${response.summary[i].cumulative_avaccine}</div>
-              <div>Cumulative Recovered: ${response.summary[i].cumulative_recovered}</div>
-              <div>Testing: ${response.summary[i].testing}</div>
-              <div>Deaths: ${response.summary[i].deaths}</div>
+              <dt>${response.summary[i].province}</dt>
+              <dd>Active Cases: ${response.summary[i].active_cases}</dd>
+              <dd>Cumulative Cases: ${response.summary[i].cumulative_cases}</dd>
+              <dd>Cumulative Vaccine: ${response.summary[i].cumulative_avaccine}</dd>
+              <dd>Cumulative Recovered: ${response.summary[i].cumulative_recovered}</dd>
+              <dd>Testing: ${response.summary[i].testing}</dd>
+              <dd>Deaths: ${response.summary[i].deaths}</dd>
+              <hr class="uk-description-list-divider">
             </div>`)
-            
         }
     })
 });
