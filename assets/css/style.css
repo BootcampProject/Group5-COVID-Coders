@@ -27,6 +27,9 @@
     font-weight: bold;
 }
 
-.newsletterHtml {
-    overflow: hidden;
-}
+/* Media query for mobile screens only */
+
+/* @media only screen and (max-width: 480px) {
+.heroImage {
+    display: none;
+}}; */
