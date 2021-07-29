@@ -26,3 +26,7 @@
     color: rgba(8, 47, 81);
     font-weight: bold;
 }
+
+.newsletterHtml {
+    overflow: hidden;
+}
