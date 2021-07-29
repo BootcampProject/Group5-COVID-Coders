@@ -66,22 +66,189 @@ $(document).ready(function(){
 
     $.ajax(cadStats).done(function (response){
         console.log(response)
-        for (let i = 0; i < 14 ; i++) {
             $("#cadStats").append(`<div>
-            <div>${response.summary[i].province}</div>
-            <div>${response.summary[i].active_cases}</div>
-            <div>${response.summary[i].cumulative_cases}</div>
-            <div>${response.summary[i].cumulative_avaccine}</div>
-            <div>${response.summary[i].cumulative_recovered}</div>
-            <div>${response.summary[i].testing}</div>
-            <div>${response.summary[i].deaths}</div>
+              <dt id="alberta">${response.summary[0].province}</dt>
+              <dd>Active Cases: ${response.summary[0].active_cases}</dd>
+              <dd>Cumulative Cases: ${response.summary[0].cumulative_cases}</dd>
+              <dd>Cumulative Vaccine: ${response.summary[0].cumulative_avaccine}</dd>
+              <dd>Cumulative Recovered: ${response.summary[0].cumulative_recovered}</dd>
+              <dd>Testing: ${response.summary[0].testing}</dd>
+              <dd>Deaths: ${response.summary[0].deaths}</dd>
+              <hr class="uk-description-list-divider">
             </div>`)
-            
-        }
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="britishColumbia">${response.summary[1].province}</dt>
+                      <dd>Active Cases: ${response.summary[1].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[1].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[1].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[1].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[1].testing}</dd>
+                      <dd>Deaths: ${response.summary[1].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="manitobia">${response.summary[2].province}</dt>
+                      <dd>Active Cases: ${response.summary[2].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[2].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[2].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[2].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[2].testing}</dd>
+                      <dd>Deaths: ${response.summary[2].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="newBrunswick">${response.summary[3].province}</dt>
+                      <dd>Active Cases: ${response.summary[3].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[3].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[3].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[3].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[3].testing}</dd>
+                      <dd>Deaths: ${response.summary[3].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="newfoundland">${response.summary[4].province}</dt>
+                      <dd>Active Cases: ${response.summary[4].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[4].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[4].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[4].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[4].testing}</dd>
+                      <dd>Deaths: ${response.summary[4].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="novaScotia">${response.summary[5].province}</dt>
+                      <dd>Active Cases: ${response.summary[5].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[5].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[5].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[5].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[5].testing}</dd>
+                      <dd>Deaths: ${response.summary[5].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="nunavut">${response.summary[6].province}</dt>
+                      <dd>Active Cases: ${response.summary[6].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[6].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[6].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[6].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[6].testing}</dd>
+                      <dd>Deaths: ${response.summary[6].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="northwest">${response.summary[7].province}</dt>
+                      <dd>Active Cases: ${response.summary[7].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[7].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[7].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[7].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[7].testing}</dd>
+                      <dd>Deaths: ${response.summary[7].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="ontario">${response.summary[8].province}</dt>
+                      <dd>Active Cases: ${response.summary[8].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[8].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[8].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[8].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[8].testing}</dd>
+                      <dd>Deaths: ${response.summary[8].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="pei">${response.summary[9].province}</dt>
+                      <dd>Active Cases: ${response.summary[9].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[9].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[9].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[9].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[9].testing}</dd>
+                      <dd>Deaths: ${response.summary[9].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="quebec">${response.summary[10].province}</dt>
+                      <dd>Active Cases: ${response.summary[10].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[10].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[10].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[10].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[10].testing}</dd>
+                      <dd>Deaths: ${response.summary[10].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="saskatchewan">${response.summary[12].province}</dt>
+                      <dd>Active Cases: ${response.summary[12].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[12].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[12].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[12].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[12].testing}</dd>
+                      <dd>Deaths: ${response.summary[12].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
+
+            $.ajax(cadStats).done(function (response){
+                console.log(response)
+                    $("#cadStats").append(`<div>
+                      <dt id="yukon">${response.summary[13].province}</dt>
+                      <dd>Active Cases: ${response.summary[13].active_cases}</dd>
+                      <dd>Cumulative Cases: ${response.summary[13].cumulative_cases}</dd>
+                      <dd>Cumulative Vaccine: ${response.summary[13].cumulative_avaccine}</dd>
+                      <dd>Cumulative Recovered: ${response.summary[13].cumulative_recovered}</dd>
+                      <dd>Testing: ${response.summary[13].testing}</dd>
+                      <dd>Deaths: ${response.summary[13].deaths}</dd>
+                      <hr class="uk-description-list-divider">
+                    </div>`)
+            })
     })
+
 });
 });
-// });
+
 
 $("#newsletter").on("click", function(event){
     event.preventDefault();
@@ -98,4 +265,5 @@ $("#newsletter").on("click", function(event){
     localStorage.setItem("newsletter", JSON.stringify(news));
 
     window.location.href = "newsletter.html";
+
 })
