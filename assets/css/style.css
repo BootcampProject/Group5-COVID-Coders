@@ -9,6 +9,7 @@
         margin-top: 70px;
     }
 
+/* SEARCH BUTTON STYLING */
     .no-underline:link {
         text-decoration: none;
     }
@@ -30,14 +31,18 @@
         margin-right: 40px;
     }
 
-/* SEARCH BUTTON STYLING */
-    .COVIDbuttonStyle {
-        border: none;
-    }
+/* BUTTON PANEL STYLING */
+.provinceBtnPanel {
+    margin: 10px;
+}
+
+.btnPanelHeader {
+    text-align: center;
+}
 
 /* COLUMN CONTAINING 3 MAIN CONTENT ITEMS */
     #mainContent {
-        margin: 10px;
+        margin: 40px 10px 10px 10px;
     }
 
 /* CONTACT US & NEWSLETTER ELEMENTS*/

@@ -21,12 +21,24 @@
             <source src="./assets/images/HeaderVideo.mp4" type="video/mp4">
             <!-- Reference: Video by kilian Figueras torras from Pexels -->
         </video>
-        <!-- <img src="./assets/images/HeaderImage.jpg" alt=""> -->
+
+        <!-- <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <a href="index.html"> <img src="assets/images/logo-light.png" width="90"/></a>
+                        <li class="uk-active"><a href="#">About Us</a></li>
+                        <li class="uk-active"><a href="#contactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> -->
+
         <div class="uk-position-top">
             <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
-                        <img src="assets/images/logo-light.png" width="90"/>
+                        <a href="index.html"> <img src="assets/images/logo-light.png" width="90"/></a>
                         <li class="uk-active"><a href="#">About Us</a></li>
                         <li class="uk-active"><a href="#contactUs">Contact Us</a></li>
                     </ul>
@@ -37,14 +49,6 @@
         <div class="uk-position-center mouseClick">
             <img width="90" src="./assets/images/mouseclick.gif">
         </div>
-        <!-- Basic Search Button for functionality purposes-->
-        <!-- <div class="uk-position-bottom">
-            <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
-                <div class="uk-navbar-center">
-                    <button class="uk-button uk-button-default uk-width-1-1 COVIDbuttonStyle" id="journal">Click here for current COVID-19 articles, news and statistics</button>
-                </div>
-            </nav>
-        </div> -->
 
         <!-- Functioning Center Fade in Animation with Button to add later -->
             <div class="uk-text-center">
@@ -62,6 +66,53 @@
 
 
     <!-- Content Grid -->
+    <div class="provinceBtnPanel">
+        <nav class="uk-navbar-container uk-dark" uk-navbar>
+            <h3 class="btnPanelHeader">Click on a province to view their most recent COVID-19 statistics.</h3>
+            <div class="uk-navbar-left">
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Ontario</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Alberta</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">British Columbia</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Manitoba</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">New Brunswick</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Newfoundland & Labrador</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Nova Scotia</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Nunavut</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Northwest Territories</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">P.E.I</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Quebec</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Saskatchewan</button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default">Yukon</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     <div data-uk-grid="{gutter: 20}" class="uk-grid" id="mainContent">
         <div class="uk-width-3-4">
             <div class="uk-grid">
@@ -95,14 +146,6 @@
         </div>
         <div class="uk-width-1-4">
             <h3>Canadian Statistics</h3>
-            <!-- <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                        <div id="stats"></div>
-                    </div>
-                </div>
-            </div> -->
-
             <!-- Appended List elements layout -->
             <dl class="uk-description-list uk-description-list">
                 <dt id="newDeath"></dt>
@@ -111,14 +154,8 @@
                 <dt id="totalConfirmed"></dt>
                 <dt id="totalDeaths"></dt>
                 <dt id="totalRecovered"></dt>
-                <div id="cadStats">Canadian Stats</div>
+                <div id="cadStats"></div>
             </dl>
-            <!-- <dl class="uk-description-list uk-description-list-divider">
-                <dt>Description term</dt>
-                <dd>Lorem ipsum dolor sit amet</dd>
-                <dt>Description term</dt>
-                <dd>Lorem ipsum dolor sit amet</dd>
-            </dl> -->
         </div>
     </div>
 
@@ -152,11 +189,11 @@
                     <h3>Newsletter Registration</h3>
                     <form>
                         <div class="uk-margin uk-width-1-2@s">
-                            <input class="uk-input" type="text" placeholder="Full Name">
+                            <input class="uk-input" id="name" type="text" placeholder="Full Name">
                         </div>
 
                         <div class="uk-margin uk-width-1-2@s">
-                            <input class="uk-input" type="email" placeholder="E-mail">
+                            <input class="uk-input" id="email" type="email" placeholder="E-mail">
                         </div>
                         <button class="uk-button uk-button-default" id="newsletter">Submit</button>
                     </form>
@@ -169,6 +206,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
 </body>
 </html>

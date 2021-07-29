@@ -68,13 +68,13 @@ $(document).ready(function(){
         console.log(response)
         for (let i = 0; i < 14 ; i++) {
             $("#cadStats").append(`<div>
-            <div>${response.summary[i].province}</div>
-            <div>${response.summary[i].active_cases}</div>
-            <div>${response.summary[i].cumulative_cases}</div>
-            <div>${response.summary[i].cumulative_avaccine}</div>
-            <div>${response.summary[i].cumulative_recovered}</div>
-            <div>${response.summary[i].testing}</div>
-            <div>${response.summary[i].deaths}</div>
+              <div>Province: ${response.summary[i].province}</div>
+              <div>Active Cases: ${response.summary[i].active_cases}</div>
+              <div>Cumulative Cases: ${response.summary[i].cumulative_cases}</div>
+              <div>Cumulative Vaccine: ${response.summary[i].cumulative_avaccine}</div>
+              <div>Cumulative Recovered: ${response.summary[i].cumulative_recovered}</div>
+              <div>Testing: ${response.summary[i].testing}</div>
+              <div>Deaths: ${response.summary[i].deaths}</div>
             </div>`)
             
         }
@@ -98,4 +98,5 @@ $("#newsletter").on("click", function(event){
     localStorage.setItem("newsletter", JSON.stringify(news));
 
     window.location.href = "newsletter.html";
+
 })
