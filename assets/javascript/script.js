@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $("#journal").on("click", function (event) {
+    $(this).unbind("click");  
       var loadContent = event.target.textContent
       var urlCovid = "https://api.springernature.com/metadata/json?q=keyword:covid&api_key=6dc88c6bf4873b8f5d8482c671f650cc"
       console.log(urlCovid)
@@ -8,7 +9,7 @@ $(document).ready(function(){
           console.log(response.records);
           for (let i = 0; i < response.records.length; i++) {
               $("#article").append(`<div>
-              <a href="${response.records[i].url[0].value}"><h4>${response.records[i].title}</h4></a>
+              <a href="${response.records[i].url[0].value}" target="_blank"><h4>${response.records[i].title}</h4></a>
               <div>${response.records[i].abstract}</div>
               <hr class="uk-description-list-divider">
               </div>`)
@@ -53,7 +54,7 @@ $(document).ready(function(){
           console.log(response);
           for (let i = 0; i <= 30; i++) {
               $("#news").append(`<div>
-              <a href="${response.news[i].webUrl}"><h4>${response.news[i].title}</h4></a>
+              <a href="${response.news[i].webUrl}" target="_blank"><h4>${response.news[i].title}</h4></a>
               <div>${response.news[i].excerpt}</div>
               <hr class="uk-description-list-divider">
               </div>`)
