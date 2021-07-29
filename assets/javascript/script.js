@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("#journal").on("click", function (event) {
-    $(this).unbind("click");  
+    $(this).unbind("click"); 
       var loadContent = event.target.textContent
       var urlCovid = "https://api.springernature.com/metadata/json?q=keyword:covid&api_key=6dc88c6bf4873b8f5d8482c671f650cc"
       console.log(urlCovid)
