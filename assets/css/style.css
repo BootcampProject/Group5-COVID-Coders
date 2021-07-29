@@ -12,18 +12,22 @@
 /* SEARCH BUTTON STYLING */
     .no-underline:link {
         text-decoration: none;
+        color: inherit;
     }
     
     .no-underline:visited {
         text-decoration: none;
+        color: inherit;
     }
     
     .no-underline:hover {
         text-decoration: none;
+        color: inherit;
     }
     
     .no-underline:active {
         text-decoration: none;
+        color: inherit;
     }
 
 /* UP ARROW STYLING */
@@ -36,6 +40,7 @@
 .provinceBtnPanel {
     margin: 10px;
 }
+
 
 .btnPanelHeader {
     text-align: center;
