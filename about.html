@@ -16,90 +16,82 @@
 
 <body>
     <div class="container-wrap">
-    <!-- HERO IMAGE & NAV -->
-    <div class="uk-position-relative">
-        <!-- <video autoplay muted loop poster="video.jpg" id="videobg" uk-cover>
-            <source src="./assets/images/HeaderVideo.mp4" type="video/mp4"> -->
-          
-            <!-- Reference: Video by kilian Figueras torras from Pexels -->
-        <!-- </video> -->
+        <!-- HERO IMAGE & NAV -->
+        <div class="uk-position-relative">
+          <img src="./assets/images/heroImage.png" class="about-image">
+            <!-- <img src="./assets/images/HeaderImage.jpg" alt=""> -->
+            <div class="uk-position-top">
+                <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav navbar">
+                            <a href="./index.html"><img class="hover" src="./assets/images/logo_live_covid.png" width="90" /></a>
+                            <li class="uk-active hover"><a href="#aboutus">About Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+           <section class="about-content uk-margin">
+             <h1 class="uk-text-center" id="aboutus">About Us</h1>
+             <hr />
+             <p class="uk-text-center uk-padding about-content">The COVID-19 pandemic has proven the importance of clear, concise, and accurate communication and knowledge translation. News media outlets have been clouding the accuracy of information regarding the COVID-19 pandemic that is distributed to the public. In turn, this has caused the general public further confusion and increased misunderstanding of all things COVID-19 related.
+                This application is meant to provide you with access to accurate, scientific journal publication resources and Canadian wide COVID statistics in comparison to news publications. We hope that this application will appropriately inform you amidst the misinformation created by the news and media.</p>
+           </section>
+           <h1 class="uk-text-center">Our Team</h1>
+           <hr />
+        <div data-uk-grid="{gutter: 20}" class="uk-grid">
+            <div class="uk-width-1">
+                <div class="uk-grid uk-text-center">
+                    <div class="uk-width-1-4@m">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body"><img src="./assets/images/jo_img_circle.png" width="250" height="250" alt="">
+                            <h5>Joelle DesChatelets</h5>
+                            <p>Master Student</p>
+                    </div>
 
-      <img src="./assets/images/heroImage.png" class="about-image">
-        <!-- <img src="./assets/images/HeaderImage.jpg" alt=""> -->
-        <div class="uk-position-top">
-            <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav navbar">
-                        <a href="./index.html"><img class="hover" src="./assets/images/logo_live_covid.png" width="90" /></a>
-                        <li class="uk-active hover"><a href="#">About Us</a></li>
-                        <li class="uk-active hover"><a href="#contactUs">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-       <section class="about-content uk-margin">
-         <h1 class="uk-text-center">About Us</h1>
-         <hr />
-         <p class="uk-text-center uk-padding about-content">The COVID-19 pandemic has proven the importance of clear, concise, and accurate communication and knowledge translation. News media outlets have been clouding the accuracy of information regarding the COVID-19 pandemic that is distributed to the public. In turn, this has caused the general public further confusion and increased misunderstanding of all things COVID-19 related.
-            This application is meant to provide you with access to accurate, scientific journal publication resources and Canadian wide COVID statistics in comparison to news publications. We hope that this application will appropriately inform you amidst the misinformation created by the news and media.</p>
-       </section>
-       <h1 class="uk-text-center">Our Team</h1>
-       <hr />
-    <div data-uk-grid="{gutter: 20}" class="uk-grid">
-        <div class="uk-width-1">
-            <div class="uk-grid uk-text-center">
-                <div class="uk-width-1-4@m">
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body"><img src="./assets/images/jo_img_circle.png" width="250" height="250" alt="">
-                        <h5>Joelle DesChatelets</h5>
-                    <p>Master Student</p>
-                    <i class="fab fa-github fa-2x"></i>
-                </div>
-                          
-                </div>  
-                <div class="uk-width-1-4@m">
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body"><img src="./assets/images/lia_image_circle.png" width="250" height="250" alt="">
-                        <h5>Lia Mattacchione</h5>
-                    <p>B.Kin, R.Kin, MPK</p>
-                    <i class="fab fa-github fa-2x"></i>  
-                    </div>  </div>
-                    
-                <div class="uk-width-1-4@m">
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body"><img src="./assets/images/jay_image_circle.png" width="250" height="250" alt="">
-                        <h5>Jay Sarmiento</h5>
-                    <p>Lorem, ipsum.</p>
-                    <i class="fab fa-github fa-2x"></i>  
-                    </div>  </div>
-                    
-                <div class="uk-width-1-4@m">
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body"><img src="./assets/images/amal_image_circle.png" width="250" height="250" alt="">
-                        <h5>Amal Lohith</h5>
-                    <p>BTech Mech Eng.</p>
-                    <i class="fab fa-github fa-2x"></i>  
-                    </div> </div>
-                     
-                <div class="uk-width-1-4@m">
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body"> <img src="./assets/images/adi_placeholder_circle.png" width="250" height="250" alt="">
-                        <h5>Adi Wee</h5>
-                    <p>Lorem, ipsum dolor.</p>
-                    <i class="fab fa-github fa-2x"></i>  
-                    </div> </div>
-                     
-                <div class="uk-width-1-4@m">
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body"> <img src="./assets/images/jayme_placeholder_circle.png" width="250" height="250" alt="">
-                        <h5>Jayme</h5>
-                    <p>Lorem, ipsum.</p>
-                    <i class="fab fa-github fa-2x"></i>  
-                    </div> </div>
-                    
+                    </div>  
+                    <div class="uk-width-1-4@m">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body"><img src="./assets/images/lia_image_circle.png" width="250" height="250" alt="">
+                            <h5>Lia Mattacchione</h5>
+                            <p>B.Kin, R.Kin, MPK</p>
                         </div>
-                            </div>
-    </div>
+                    </div>
+
+                    <div class="uk-width-1-4@m">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body"><img src="./assets/images/jay_image_circle.png" width="250" height="250" alt="">
+                            <h5>Jay Sarmiento</h5>
+                            <p>Lorem, ipsum.</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-4@m">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body"><img src="./assets/images/amal_image_circle.png" width="250" height="250" alt="">
+                            <h5>Amal Lohith</h5>
+                            <p>BTech Mech Eng.</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-4@m">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body"> <img src="./assets/images/adi_placeholder_circle.png" width="250" height="250" alt="">
+                            <h5>Adi Wee</h5>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-4@m">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body"> <img src="./assets/images/jayme_placeholder_circle.png" width="250" height="250" alt="">
+                            <h5>Jayme</h5>
+                            <p>Lorem, ipsum.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
                    
     <footer class="uk-text-center">
         <hr />
         <p>copyright 2021 &copy; <em>Staying Current With COVID-19.</em> All Rights Reserved</p>
     </footer>
-</div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/javascript/script.js"></script>
 </body>
