@@ -62,6 +62,10 @@ text-align: center;
     text-decoration: underline;
 }
 
+.teamContainer {
+    margin: 5px;
+}
+
 
 @media screen and (max-width: 768px) {
     h3 {
