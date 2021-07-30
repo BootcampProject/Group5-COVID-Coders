@@ -25,7 +25,9 @@
 
 
 Below is an example screenshot of the application:
-![COVID Dashboard](./assets/images/06-server-side-apis-homework-demo.png)
+![COVID Dashboard Hero Screenshot](./assets/images/HeroHome.png)
+![COVID Dashboard Home Page Content](./assets/images/MainContent.png)
+![COVID Dashboard Newsletter Page](./assets/images/Newsletter.png)
 
 
 ## Review
