@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,69 +8,50 @@
     <!-- UIKIT CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
     <!-- GENERAL CSS STYLESHEET -->
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
     <!-- HERO IMAGE & NAV -->
-    <div class="uk-position-relative">
-        <video autoplay muted loop poster="video.jpg" id="videobg" uk-cover>
-            <source src="./assets/images/HeaderVideo.mp4" type="video/mp4">
-            <!-- Reference: Video by kilian Figueras torras from Pexels -->
-        </video>
+    <div class="uk-text-center uk-position-relative">
+        <img class="heroImage" src="assets/images/heroImage.png" alt="A picture of a virus">
+
         <div class="uk-position-top">
             <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
-                        <img src="assets/images/logo-light.png" width="90"/>
-                        <li class="uk-active"><a href="index.html">Return Home</a></li>
+                        <a href="index.html"> <img src="assets/images/logo-light.png" width="90" /></a>
                     </ul>
                 </div>
             </nav>
         </div>
 
-        <div class="uk-text-center-left">        
-            <div class="uk-position-small uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-                Cover
+        <!-- Newsletter description -->
+        <div class="newsletterInfo uk-card uk-card-default uk-card-body uk-width-1">
+            <h2>Thank you for registering for our Newsletter, <span id="getname"></span>!!!</h2>
+            <p>Every 2 weeks you will be receiving the most recent COVID-19 updates to <span id="getemail"></span>:
+                Information will include up-to-date, peer-reviewed, published journal articles from Springer
+                Link, news articles from various Canadian news outlets, as well as country wide statistics.
+                Additional supporting items such as the video below may also be included within newsletters.
+            </p>
+            <div>
+                <h3>Watch Dr. Supriya Sharma, Chief Medical Advisor at Health Canada, explain how the COVID-19
+                    vaccines
+                    were
+                    reviewed for safety.</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QspUIojGOH0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p>Video Provided by the Government of Canada.</p>
             </div>
         </div>
-
-        <div id="getname"></div>
-        <div id="getemail"></div>
-
-        <div>
-            <h2>Thank you for registering for our Newsletter!!!</h2>
-            <p>Every 2 weeks we will send you Covid-19 related information. That can be in the form of an article, a scientic journal, or a video.</p>
-            <p>Today we are answering the question, "How do we know Vaccines are Safe?"</p>
-            <p>Watch the Video Below to get your questions answered.</p>
-            <video width="560" height="314" allowfullscreen="allowfullscreen">
-                <source src="https://youtu.be/QspUIojGOH0">
-            </video>
-            <p>Video Provided from Health Canada.</p>
-        </div>
-
-        
-
-        <!-- Functioning Center Fade in Animation with Button to add later -->
-            <!-- <div class="uk-text-center">
-                <div class="uk-transition-toggle uk-dark" tabindex="0">
-                    <div class="uk-position-center">
-                        <div class="uk-transition-slide-top-small uk-overlay uk-overlay-default"><h4 class="uk-h4 uk-margin-remove">Stay Current. Stay Informed.</h4></div>
-                        <div class="uk-transition-slide-bottom-small uk-overlay uk-overlay-default">
-                            <button class="uk-button uk-button-default uk-width-1-1" id="journal">Click here to search for current COVID-19 articles</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
     </div>
 
 
-
-    <footer>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/javascript/newsletter.js"></script>
 </body>
+
 </html>
