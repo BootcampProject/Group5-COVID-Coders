@@ -46,7 +46,11 @@
 .about-hero {
   background: url(../images/about-hero.jpg) no-repeat center center/cover;
 }
-
+/* container content centering */
+.container-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* UP ARROW STYLING */
 #upArrow {
   margin-right: 40px;
