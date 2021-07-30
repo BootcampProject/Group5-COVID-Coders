@@ -22,15 +22,21 @@
             <!-- Reference: Video by kilian Figueras torras from Pexels -->
         </video>
 
-        <div class="uk-position-top">
-            <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+        <div class="uk-position-top ">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-light"  uk-navbar>
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
                         <a href="index.html"> <img src="assets/images/logo-light.png" width="90"/></a>
                         <li class="uk-active"><a href="#">About Us</a></li>
                         <li class="uk-active"><a href="#contactUs">Contact Us</a></li>
                     </ul>
-                </div>
+                    <div class="uk-navbar-right uk-margin-right">                        
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+                </div>               
             </nav>
         </div>
 
@@ -49,14 +55,14 @@
                     </div>
                 </div>
             </div>
-
     </div>
 
 
     <!-- Content Grid -->
     <div class="provinceBtnPanel" id="provincePanel">
-        <nav class="uk-navbar-container uk-dark" uk-navbar>
-            <h3 class="btnPanelHeader">Click on a province to view their most recent COVID-19 statistics.</h3>
+        <nav class="uk-navbar-container  uk-background-muted" uk-navbar>
+        <!-- <nav class="uk-navbar-container uk-dark " uk-navbar> -->
+            <h3 class="btnPanelHeader uk-dark uk-background-muted uk-padding">Click on a province to view their most recent COVID-19 statistics.</h3>
             <div class="uk-navbar-left">
                 <div class="uk-navbar-item" id="province"> 
                     <button class="uk-button uk-button-default ontario"><a class="no-underline" href="#ontario">Ontario</a></button>
