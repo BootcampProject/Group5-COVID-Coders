@@ -51,6 +51,9 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.about-content {
+  line-height: 1.9rem;
+}
 /* UP ARROW STYLING */
 #upArrow {
   margin-right: 40px;
