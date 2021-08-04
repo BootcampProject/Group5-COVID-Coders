@@ -1,3 +1,8 @@
+/* Smooth scrolling function */
+html {
+    scroll-behavior: smooth;
+}
+
 /* FAIL SAFE IF VIDEO DOESN'T LOAD*/
 #videobg {
     background: url(video.jpg) no-repeat;
@@ -39,6 +44,17 @@
 /* BUTTON PANEL STYLING */
 .provinceBtnPanel {
 margin: 10px;
+}
+
+/* Highlighting provinces for clear visual data*/
+@keyframes yellowfade {
+    from { background: yellow; }
+    to { background: transparent; }
+}
+
+:target {
+    animation-name: yellowfade;
+    animation-duration: 2s;
 }
 
 
