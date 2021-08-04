@@ -1,3 +1,8 @@
+/* Smooth scrolling function */
+html {
+    scroll-behavior: smooth;
+}
+
 /* FAIL SAFE IF VIDEO DOESN'T LOAD*/
 #videobg {
     background: url(video.jpg) no-repeat;
