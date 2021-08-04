@@ -97,7 +97,7 @@ $(document).ready(function(){
               $.ajax(cadStats).done(function (response){
                   console.log(response)
                       $("#cadStats").append(`<div>
-                        <dt id="manitobia">${response.summary[2].province}</dt>
+                        <dt id="manitoba">${response.summary[2].province}</dt>
                         <dd>Active Cases: ${response.summary[2].active_cases}</dd>
                         <dd>Cumulative Cases: ${response.summary[2].cumulative_cases}</dd>
                         <dd>Cumulative Vaccine: ${response.summary[2].cumulative_avaccine}</dd>
