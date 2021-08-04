@@ -1,3 +1,111 @@
-.background {
-    
+/* FAIL SAFE IF VIDEO DOESN'T LOAD*/
+#videobg {
+    background: url(video.jpg) no-repeat;
+    background-size: cover;
 }
+
+/* MOUSE CLICK ICON */
+.mouseClick {
+    margin-top: 70px;
+}
+
+/* SEARCH BUTTON STYLING */
+.no-underline:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-underline:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-underline:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-underline:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* UP ARROW STYLING */
+#upArrow {
+    margin-right: 40px;
+}
+
+
+/* BUTTON PANEL STYLING */
+.provinceBtnPanel {
+margin: 10px;
+}
+
+/* Highlighting provinces for clear visual data*/
+ @keyframes yellowfade {
+    from { background: yellow; }
+    to { background: transparent; }
+}
+
+:target {
+    animation-name: yellowfade;
+    animation-duration: 2s;
+}
+
+.btnPanelHeader {
+text-align: center;
+}
+
+/* COLUMN CONTAINING 3 MAIN CONTENT ITEMS */
+#mainContent {
+    margin: 40px 10px 10px 10px;
+}
+
+/* CONTACT US & NEWSLETTER ELEMENTS*/
+#contactUs {
+    margin: 40px 10px 30px 10px;
+}
+
+.newsletterInfo h2 span, .newsletterInfo p span {
+    color: rgba(8, 47, 81);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.teamContainer {
+    margin-bottom: 15px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 1rem;
+    }
+
+    .ontario, .alberta, .britishColumbia, .manitobia, .newBrunswick, .newfoundland, .novaScotia, .nunavut, .northwest, .pei, .quebec, .saskatchewan, .yukon {
+        font-size: 0.7rem;
+    }
+
+    #article, #news {
+        font-size: 0.7rem;
+    }
+
+    #newDeath, #newConfirmed, #newRecovered, #totalConfirmed, #totalDeaths, #totalRecovered {
+        font-size: 0.7rem;
+    }
+
+    dd {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newsletterInfo div iframe {
+        width: 300px;
+    }
+    .newsletter {
+        margin-top: 15px;
+    }
+};

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIKIT CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+    <!-- GENERAL CSS STYLESHEET -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- HERO IMAGE & NAV -->
+    <div class="uk-text-center uk-position-relative">
+        <img class="heroImage" src="assets/images/heroImage.png" alt="A picture of a virus">
+
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <a href="index.html"> <img src="assets/images/logo-light.png" width="90" /></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Newsletter description -->
+        <div class="newsletterInfo uk-card uk-card-default uk-card-body uk-width-1">
+            <h2>Thank you for registering for our Newsletter, <span id="getname"></span>!!!</h2>
+            <p>Every 2 weeks you will be receiving the most recent COVID-19 updates to <span id="getemail"></span>:
+                Information will include up-to-date, peer-reviewed, published journal articles from Springer
+                Link, news articles from various Canadian news outlets, as well as country wide statistics.
+                Additional supporting items such as the video below may also be included within newsletters.
+            </p>
+            <div>
+                <h3>Watch Dr. Supriya Sharma, Chief Medical Advisor at Health Canada, explain how the COVID-19
+                    vaccines
+                    were
+                    reviewed for safety.</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QspUIojGOH0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p>Video Provided by the Government of Canada.</p>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="uk-divider-icon">
+    <footer class="uk-text-center">
+        <p>copyright 2021 &copy; <em>Staying Current With COVID-19.</em> All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/newsletter.js"></script>
+</body>
+
+</html>

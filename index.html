@@ -3,10 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIKIT CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+    <!-- Font Aswesome Icon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- GENERAL CSS STYLESHEET -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="html" href="newsletter.html">
+    <link rel="html" href="about.html">
+    <title>Staying Current with COVID-19</title>
 </head>
+
 <body>
+    <!-- HERO IMAGE & NAV -->
+    <div class="uk-position-relative">
+        <video autoplay muted loop poster="video.jpg" id="videobg" uk-cover>
+            <source src="./assets/images/HeaderVideo.mp4" type="video/mp4">
+            <!-- Reference: Video by kilian Figueras torras from Pexels -->
+        </video>
+
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav navbar">
+                        <a href="index.html"><img class="hover" src="./assets/images/logo_live_covid.png" width="90" /></a>
+                        <li class="uk-active hover"><a href="about.html">About Us</a></li>
+                        <li class="uk-active hover"><a href="#contactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="uk-position-center mouseClick">
+            <img width="90" src="./assets/images/mouseclick.gif">
+        </div>
+
+        <!-- Functioning Center Fade in Animation with Button to add later -->
+            <div class="uk-text-center">
+                <div class="uk-transition-toggle uk-dark" tabindex="0">
+                    <div class="uk-position-center">
+                        <div class="uk-transition-slide-top-small uk-overlay uk-overlay-default"><h4 class="uk-h4 uk-margin-remove">Stay Current. Stay Informed.</h4></div>
+                        <div class="uk-transition-slide-bottom-small uk-overlay uk-overlay-default">
+                            <button class="uk-button uk-button-default uk-width-1-1" id="journal"><a href="#provincePanel" class="no-underline uk-dark">Click here for current COVID-19 articles, news and statistics</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+    <!-- Content Grid -->
+    <div class="provinceBtnPanel" id="provincePanel">
+        <nav class="uk-navbar-container uk-dark" uk-navbar>
+            <h3 class="btnPanelHeader">Click on a province to view their most recent COVID-19 statistics.</h3>
+            <div class="uk-navbar-left">
+                <div class="uk-navbar-item"> 
+                    <button class="uk-button uk-button-default ontario"><a class="no-underline" href="#ontario">Ontario</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default alberta"><a class="no-underline" href="#alberta">Alberta</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default britishColumbia"><a class="no-underline" href="#britishColumbia">British Columbia</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default manitoba"><a class="no-underline"href="#manitoba">Manitoba</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default newBrunswick"><a class="no-underline" href="#newBrunswick">New Brunswick</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default newfoundland"><a class="no-underline" href="#newfoundland">Newfoundland & Labrador</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default novaScotia"><a class="no-underline" href="#novaScotia">Nova Scotia</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default nunavut"><a class="no-underline" href="#nunavut">Nunavut</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default northwest"><a class="no-underline" href="#northwest">Northwest Territories</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default pei"><a class="no-underline" href="#pei">P.E.I</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default quebec"><a class="no-underline" href="#quebec">Quebec</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default saskatchewan"><a class="no-underline" href="#saskatchewan">Saskatchewan</a></button>
+                </div>
+                <div class="uk-navbar-item">
+                    <button class="uk-button uk-button-default yukon"><a class="no-underline" href="#yukon">Yukon</a></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div data-uk-grid="{gutter: 20}" class="uk-grid" id="mainContent">
+        <div class="uk-width-3-4">
+            <div class="uk-grid">
+                <div class="uk-width-1-2@m columnBorder journal">
+                    <h3>SpringerLink Publication</h3>
+                    <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                <div id="article"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m columnBorder news">
+                    <h3>Canadian News Publication</h3>
+                    <div class="uk-child-width-1 uk-grid-match uk-grid-large" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                <div id="news"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-width-1-4@m stats">
+            <h3>Canadian Statistics</h3>
+            <!-- Appended List elements layout -->
+            <dl class="uk-description-list uk-description-list">
+                <dt id="newDeath"></dt>
+                <dt id="newConfirmed"></dt>
+                <dt id="newRecovered"></dt>
+                <dt id="totalConfirmed"></dt>
+                <dt id="totalDeaths"></dt>
+                <dt id="totalRecovered"></dt>
+            </dl>
+            <h3>Provincial Statistics</h3>
+            <dl class="uk-description-list uk-description-list provcolor">
+                <div id="cadStats"></div>
+            </dl>
+        </div>
+    </div>
+
+    <div class="uk-text-right upArrowIcon">
+        <a href="#provincePanel" uk-totop uk-scroll>
+            <img width="40" id="upArrow" src="assets/images/uparrow.png">
+        </a>
+    </div>
+
+    <hr class="uk-divider-icon">
+
+    <div data-uk-grid="{gutter: 20}" class="uk-grid" id="contactUs">
+        <div class="uk-width-3-4">
+            <div class="uk-grid">
+                <div class="uk-width-1-2@m">
+                    <h3>Contact Us</h3>
+                    <h5 class="uk-margin uk-width-1-2@s">Email: covidcoders@aol.com</h5>
+                    <h5 class="uk-margin uk-width-1-2@s">Office: 1.866.COV-ID19</h5>
+                </div>
+                <div class="uk-width-1-2@m newsletter">
+                    <h3>Newsletter Registration</h3>
+                    <form>
+                        <div class="uk-margin uk-width-1-2@s">
+                            <input class="uk-input" id="name" type="text" placeholder="Full Name">
+                        </div>
+
+                        <div class="uk-margin uk-width-1-2@s">
+                            <input class="uk-input" id="email" type="email" placeholder="E-mail">
+                        </div>
+                        <button class="uk-button uk-button-default" id="newsletter">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="uk-divider-icon">
+    <footer class="uk-text-center">
+        <p>copyright 2021 &copy; <em>Staying Current With COVID-19.</em> All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/script.js"></script>
     
 </body>
 </html>
